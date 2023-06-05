@@ -1,0 +1,347 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar start */
+#navbar{
+    background-color: #f9f9f9;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 500;
+    color: #000;
+    /* text-shadow: 0px 1px 1px #000; */
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: #000;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: .3s ease;
+}
+.nav-item .nav-link:hover{
+    background-color: #ffa500;
+    color: #fff;
+}
+#navbar form button{
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+}
+/* Navbar end */
+
+/* Home section start */
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(./images/background\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: #fff;
+    font-size: 38px;
+    font-weight: 500;
+    /* text-shadow: 0px 1px 1px #000; */
+}
+.home .content h1{
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+    /* text-shadow: 0px 1px 1px #000; */
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: " ";
+    color: #ffa500;
+    /* text-shadow: 0px 1px 1px #000; */
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "India";}
+    10%{content: "France";}
+    20%{content: "Unired states";}
+    30%{content: "China";}
+    40%{content: "Pakistan";}
+    50%{content: "Turky";}
+    60%{content: "Italy";}
+    70%{content: "Mexico";}
+    80%{content: "Germany";}
+    90%{content: "United Kingdom";}
+    100%{content: "Newyork";}
+}
+
+.home .content p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    /* text-shadow: 0px 1px 1px #000; */
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.home .content a{
+    padding: 10px;
+    background-color: #fff;
+    letter-spacing: 2px;
+    font-weight: 550;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s ;
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: #fff;
+}
+
+@media (max-width:850px){
+    .home .content h5{
+        background-position: 50%;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+/* Home section end */
+
+/* Booking section start */
+.book{
+    background-color: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    /* text-shadow: 0px 1px 1px #000; */
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px #000;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: #000;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px -6px #000;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    height: 200px;
+    box-shadow: 0px 5px 5px -6px #000;
+}
+.book .submit{
+    text-align: center;
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background-color: #ffa500;
+    color: #fff;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 170px;
+}
+
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        margin-top: 20px;
+    }
+}
+/* Booking section end */
+
+/* Package section start */
+.main-text h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    /* text-shadow: 0px 1px 1px #000; */
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-bottom: 15px;
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+   padding: 10px;
+   text-decoration: none;
+   background: #ffa500;
+   color: #fff;
+   border-radius: 5px;
+}
+/* Package section end */
+
+/* Services Section start */
+.services{
+    background: #f9f9f9;
+    padding: 40px;
+}
+.services .card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.services .card i{
+    font-size: 60px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+/* Services Section end */
+
+/* Galllery Section Start */
+.gallery{
+    padding: 50px;
+}
+.gallery .card{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-bottom: 15px;
+}
+.gallery .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallery .card img:hover{
+    transform: scale(1.1);
+}
+
+/* Galllery Section end */
+
+/* About Section start */
+.about{
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+/* About Section end */
+
+/* Footer section start */
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#foooter h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px #000;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-link i{
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    background: #000;
+    color: #fff;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-link i:hover{
+    background: #ffa500;
+}
+/* Footer section end */
